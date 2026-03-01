@@ -156,5 +156,4 @@ Enhance the system prompt so the final response looks like:
 ---
 ### 📘 Course 06 — Adding a brand new capability
 
-Before starting this exercise, review the course material:
-[Lecture 06](../00-Lectures/06-Extensibility-And-Permissions.md)
+Before starting this exercise, review the course material:  **[➤ Lecture 06: ](../00-Lectures/06-Extensibility-And-Permissions.md)**

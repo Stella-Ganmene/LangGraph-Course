@@ -153,5 +153,6 @@ This is a real-world workflow that shows how agents become genuinely useful.
 
 ---
 
-**Next up**: Let's deploy this to production  
-Continue with the next lecture:  [Lecture 07 Going-Live](../00-Lectures/07-Deployment.md)
+**Next up**: Let's deploy this to production
+**[➤ Lecture 07: Going-Live](../00-Lectures/07-Deployment.md)**
+
