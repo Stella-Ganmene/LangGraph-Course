@@ -1,5 +1,5 @@
-# broken_agent_1.py — "The Email Spammer"
-# 🐛 This agent has a bug. Your mission: find it and fix it.
+# broken_agent_1.py : "The Email Spammer"
+# This agent has a bug. Your mission: find it and fix it.
 #
 # SYMPTOM: Lead "Sarah Chen" received 47 identical follow-up emails overnight.
 # The agent was supposed to send ONE email per stale lead.
@@ -83,7 +83,7 @@ graph.add_edge(START, "agent")
 graph.add_conditional_edges("agent", tools_condition)
 graph.add_edge("tools", "agent")
 
-# 🐛 BUG: No recursion limit!
+# BUG: No recursion limit!
 app = graph.compile()
 
 
@@ -96,7 +96,7 @@ if __name__ == "__main__":
 
 
 # ============================================================
-# 🐛 BUGS IN THIS FILE (for instructor reference):
+# BUGS IN THIS FILE (for instructor reference):
 #
 # 1. MAIN BUG: The system prompt says "After sending emails, check 
 #    if there are any remaining stale leads that still need follow-up."

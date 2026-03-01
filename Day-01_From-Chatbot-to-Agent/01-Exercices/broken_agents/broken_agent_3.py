@@ -1,5 +1,5 @@
-# broken_agent_3.py — "The Ghost Leads"
-# 🐛 This agent has a bug. Your mission: find it and fix it.
+# broken_agent_3.py : "The Ghost Leads"
+# This agent has a bug. Your mission: find it and fix it.
 #
 # SYMPTOM: The database now contains 3 leads that Alex never entered:
 #   - "Test User" at "Example Corp"
@@ -31,7 +31,7 @@ def get_all_leads() -> list[dict]:
     return response.data
 
 
-# 🐛 BUG: This tool can CREATE leads — but this agent should only READ and SCORE!
+# BUG: This tool can CREATE leads — but this agent should only READ and SCORE!
 @tool
 def create_or_update_lead(
     name: str, 
@@ -79,7 +79,7 @@ def create_or_update_lead(
             .execute()
         return f"Updated lead: {name} ({email})"
     else:
-        # 🐛 Creates a NEW lead — this should never happen in a scoring agent!
+        # Creates a NEW lead — this should never happen in a scoring agent!
         supabase.table("leads") \
             .insert(lead_data) \
             .execute()

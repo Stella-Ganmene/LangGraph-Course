@@ -1,5 +1,5 @@
-# broken_agent_4.py — "The Infinite Thinker"
-# 🐛 This agent has a bug. Your mission: find it and fix it.
+# broken_agent_4.py : "The Infinite Thinker"
+# This agent has a bug. Your mission: find it and fix it.
 #
 # SYMPTOM: This agent started at 3 AM and is STILL running.
 # CPU at 100%. No output produced.
@@ -51,7 +51,7 @@ def get_lead_interactions(lead_id: str) -> list[dict]:
     Args:
         lead_id: The UUID of the lead
     """
-    # 🐛 BUG: This table doesn't exist! The query will fail every time.
+    # BUG: This table doesn't exist! The query will fail every time.
     try:
         response = supabase.table("interactions") \
             .select("*") \
@@ -59,7 +59,7 @@ def get_lead_interactions(lead_id: str) -> list[dict]:
             .execute()
         return response.data
     except Exception as e:
-        # 🐛 BUG: Error is returned as a string, but it's vague.
+        # BUG: Error is returned as a string, but it's vague.
         # The LLM doesn't understand this means "table doesn't exist"
         # and tries again with different parameters.
         return {"error": str(e)}
@@ -130,7 +130,7 @@ graph.add_edge(START, "agent")
 graph.add_conditional_edges("agent", tools_condition)
 graph.add_edge("tools", "agent")
 
-# 🐛 BUG: No recursion limit!
+# BUG: No recursion limit!
 app = graph.compile()
 
 

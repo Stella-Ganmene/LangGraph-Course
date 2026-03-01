@@ -1,5 +1,5 @@
-# broken_agent_2.py — "The Impossible Score"
-# 🐛 This agent has a bug. Your mission: find it and fix it.
+# broken_agent_2.py : "The Impossible Score"
+# This agent has a bug. Your mission: find it and fix it.
 #
 # SYMPTOM: Lead "Marc Dubois" has a score of 15 out of 10.
 # Scores should be between 1 and 10.
@@ -38,7 +38,7 @@ def update_lead_score(lead_id: str, score: int, category: str) -> str:
         score: The lead's score
         category: The lead's category (hot, warm, or cold)
     """
-    # 🐛 BUG: No validation on score range!
+    # BUG: No validation on score range!
     supabase.table("leads") \
         .update({"score": score, "category": category}) \
         .eq("id", lead_id) \
@@ -52,7 +52,7 @@ llm = ChatOpenAI(model="gpt-4o-mini")
 tools = [get_unscored_leads, update_lead_score]
 llm_with_tools = llm.bind_tools(tools)
 
-# 🐛 BUG: The prompt doesn't specify the score range!
+# BUG: The prompt doesn't specify the score range!
 SYSTEM_PROMPT = """You are a lead scoring assistant.
 
 Your job is to evaluate leads and assign them a score based on their potential value.
@@ -101,7 +101,7 @@ if __name__ == "__main__":
 
 
 # ============================================================
-# 🐛 BUGS IN THIS FILE (for instructor reference):
+# BUGS IN THIS FILE (for instructor reference):
 #
 # 1. MAIN BUG: update_lead_score has NO validation.
 #    It accepts any integer — score=15, score=-3, anything.

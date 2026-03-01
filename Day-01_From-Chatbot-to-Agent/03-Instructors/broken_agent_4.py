@@ -1,5 +1,5 @@
-# broken_agent_4.py — "The Infinite Thinker"
-# 🐛 This agent has a bug. Your mission: find it and fix it.
+# broken_agent_4.py : "The Infinite Thinker"
+# This agent has a bug. Your mission: find it and fix it.
 #
 # SYMPTOM: This agent started at 3 AM and is STILL running.
 # CPU at 100%. No output produced.
@@ -51,7 +51,7 @@ def get_lead_interactions(lead_id: str) -> list[dict]:
     Args:
         lead_id: The UUID of the lead
     """
-    # 🐛 BUG: This table doesn't exist! The query will fail every time.
+    # BUG: This table doesn't exist! The query will fail every time.
     try:
         response = supabase.table("interactions") \
             .select("*") \
@@ -59,7 +59,7 @@ def get_lead_interactions(lead_id: str) -> list[dict]:
             .execute()
         return response.data
     except Exception as e:
-        # 🐛 BUG: Error is returned as a string, but it's vague.
+        # BUG: Error is returned as a string, but it's vague.
         # The LLM doesn't understand this means "table doesn't exist"
         # and tries again with different parameters.
         return {"error": str(e)}
@@ -72,7 +72,7 @@ def get_revenue_forecast(lead_ids: list[str]) -> dict:
     Args:
         lead_ids: List of lead UUIDs to include in forecast
     """
-    # 🐛 BUG: This tool sometimes works, sometimes fails randomly
+    # BUG: This tool sometimes works, sometimes fails randomly
     # (simulating an unreliable external service)
     import random
     if random.random() < 0.6:  # 60% failure rate
@@ -130,7 +130,7 @@ graph.add_edge(START, "agent")
 graph.add_conditional_edges("agent", tools_condition)
 graph.add_edge("tools", "agent")
 
-# 🐛 BUG: No recursion limit!
+# BUG: No recursion limit!
 app = graph.compile()
 
 
@@ -143,7 +143,7 @@ if __name__ == "__main__":
 
 
 # ============================================================
-# 🐛 BUGS IN THIS FILE (for instructor reference):
+# BUGS IN THIS FILE (for instructor reference):
 #
 # THERE ARE 4 COMPOUNDING BUGS THAT CREATE THE INFINITE LOOP:
 #
