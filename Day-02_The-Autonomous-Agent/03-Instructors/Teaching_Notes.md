@@ -1,4 +1,4 @@
-# Teaching Notes — Day 2: The Autonomous Agent
+# Teaching Notes  Day 2: The Autonomous Agent
 
 > **For instructors only. Do not share with students.**
 
@@ -22,7 +22,7 @@
 | 17:35 | Grand Demo (students show their work) | Presentations | 45 min |
 | 18:20 | Module Retrospective + Closing | Discussion | 20 min |
 
-**Theory/Practice split**: ~1h10 lectures / ~6h hands-on = **~15% / 85%** ✅
+**Theory/Practice split**: ~1h10 lectures / ~6h hands-on = **~15% / 85%** 
 
 ---
 
@@ -38,7 +38,7 @@ If the group seems uncertain, spend 10 extra minutes doing a quick live demo of 
 
 ---
 
-## Exercise 05 — Orchestrator: Key Teaching Moments
+## Exercise 05  Orchestrator: Key Teaching Moments
 
 ### The "Aha" Moment
 The biggest moment of Day 2 is when students realize: "Wait, I'm using the SAME pattern as Exercise 01, but my tools are entire agents."
@@ -58,7 +58,7 @@ Ask them to add a "dry run" mode: the orchestrator explains what it WOULD do wit
 
 ---
 
-## Exercise 06 — The Autonomy Test
+## Exercise 06 : The Autonomy Test
 
 ### Instructor Role Changes Here
 In Exercises 01-04, you were actively guiding. In Exercise 06, **step back**. Let students struggle. Only intervene if they're stuck for more than 15 minutes.
@@ -76,7 +76,7 @@ Ask: "How many lines of code did you change in the orchestrator?" The answer sho
 
 ---
 
-## Exercise 07 — Deployment
+## Exercise 07 : Deployment
 
 ### Keep It Simple
 The FastAPI deployment can become a rabbit hole. Keep students focused on:
@@ -84,7 +84,7 @@ The FastAPI deployment can become a rabbit hole. Keep students focused on:
 2. Getting the frontend connected
 3. Getting the human-in-the-loop working through the UI
 
-Authentication, rate limiting, and logging are "nice to have" — don't let perfect be the enemy of done.
+Authentication, rate limiting, and logging are "nice to have", don't let perfect be the enemy of done.
 
 ### Lovable Integration Tips:
 - Students may have different Lovable setups. Provide a minimal chat component template if needed.
@@ -111,7 +111,7 @@ Some students might not be comfortable with React/Lovable. Offer an alternative:
 
 ### Questions to Ask During Demos:
 - "What happens if the API is down right now?" (Error handling)
-- "What if a new intern joins — can they use your agent safely?" (Permissions)
+- "What if a new intern joins, can they use your agent safely?" (Permissions)
 - "What would you add if you had one more day?" (Vision)
 
 ---
@@ -126,16 +126,16 @@ Ask students to rate (1-5) on a piece of paper:
 4. Overall module satisfaction
 
 ### Closing Message:
-"Two days ago, you didn't know what a graph, a node, or an edge was. Now you've built a multi-agent system with database integration, external APIs, human oversight, error handling, and deployment. The pattern you learned — State, Nodes, Edges, Tools — is the same pattern used by companies building production AI agents. You're not beginners anymore. Go build."
+"Two days ago, you didn't know what a graph, a node, or an edge was. Now you've built a multi-agent system with database integration, external APIs, human oversight, error handling, and deployment. The pattern you learned, State, Nodes, Edges, Tools, is the same pattern used by companies building production AI agents. You're not beginners anymore. Go build."
 
 ---
 
 ## Contingency: If Things Run Behind
 
 **Priority cuts** (what to skip if time is tight):
-1. Exercise 07 Part 3 (production safety) — nice to have, not critical
-2. Exercise 06 bonus challenge — optional enrichment
-3. Exercise 07 Part 2 (frontend integration) — can be replaced with FastAPI /docs UI testing
+1. Exercise 07 Part 3 (production safety), nice to have, not critical
+2. Exercise 06 bonus challenge, optional enrichment
+3. Exercise 07 Part 2 (frontend integration), can be replaced with FastAPI /docs UI testing
 4. Grand demos can be shortened to 2 min per student
 
 **Never cut**:

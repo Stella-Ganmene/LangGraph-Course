@@ -1,4 +1,4 @@
-# Teaching Notes — Day 1: From Chatbot to Agent
+# Teaching Notes  Day 1: From Chatbot to Agent
 
 > **For instructors only. Do not share with students.**
 
@@ -46,7 +46,7 @@ This creates the "aha" moment that carries the rest of the day.
 ## Exercise 01 : Common Pitfalls & How to Help
 
 ### Expected Issues:
-1. **Supabase connection errors**: Most common issue. Verify `.env` file has correct URL and anon key. RLS policies might block the query — help students add a simple SELECT policy.
+1. **Supabase connection errors**: Most common issue. Verify `.env` file has correct URL and anon key. RLS policies might block the query, help students add a simple SELECT policy.
 
 2. **Tool not being called**: The AI ignores the tool and tries to answer from memory. Fix: improve the system prompt to explicitly say "You MUST use the get_stale_leads tool to check the database. Never guess."
 
