@@ -131,4 +131,4 @@ With logs like these, when something goes wrong, you can **replay the agent's th
 
 ---
 
-**Now it's your turn**  Exercise 04: **[Exercise 04: Agent Rescue Mission (fixing broken agents!)](../Exercices/04-Agent-Rescue.md)**
+**Now it's your turn**  Exercise 04: **[Exercise 04: Agent Rescue Mission (fixing broken agents!)](../01-Exercices/04-Agent-Rescue.md)**
