@@ -1,4 +1,4 @@
-# Lecture 06 — Extensibility & The Permission Matrix
+# Lecture 06 : Extensibility & The Permission Matrix
 
 > **Duration**: 15 min lecture (delivered before Exercise 06)  
 > **Objective**: Understand how to safely add new capabilities to an agent system.
@@ -49,7 +49,7 @@ Before adding any tool, ask yourself:
 2. Is that outcome **reversible**?
 3. Can I add a **confirmation step** for dangerous operations?
 
-This isn't just good engineering — it's how you build AI systems that people **trust**.
+This isn't just good engineering, it's how you build AI systems that people **trust**.
 
 ---
 
@@ -66,4 +66,4 @@ You've gone from "following Cursor's suggestions" to "directing Cursor's work." 
 
 ---
 
-**Now it's your turn** → Exercise 06: Add a New Power
+**Now it's your turn** → **[Exercise 06: Add a New Power](../01-Exercises/06-New-Power.md)**

@@ -1,4 +1,4 @@
-# Lecture 05 — The Orchestrator: Multi-Agent Architecture
+# Lecture 05 : The Orchestrator: Multi-Agent Architecture
 
 > **Duration**: 20 min lecture  
 > **Objective**: Understand how a single "manager" agent can coordinate multiple specialized agents.
@@ -8,9 +8,9 @@
 ## Where We Are
 
 Yesterday, you built 3 independent agents:
-1. 🔍 **Lead Finder** — detects stale leads in Supabase
-2. 📊 **Lead Scorer** — evaluates and categorizes leads
-3. ✉️ **Email Drafter** — writes and sends follow-ups with human approval
+1.  **Lead Finder** : detects stale leads in Supabase
+2.  **Lead Scorer** : evaluates and categorizes leads
+3.  **Email Drafter** : writes and sends follow-ups with human approval
 
 Each one works great. But Alex still has to **manually decide** which one to launch and when. That's not really autonomous, is it?
 
@@ -18,7 +18,7 @@ Each one works great. But Alex still has to **manually decide** which one to lau
 
 ## The Multi-Agent Idea
 
-What if there was a **4th agent** — a manager — whose only job is to:
+What if there was a **4th agent**, a manager, whose only job is to:
 1. Listen to Alex's request
 2. Figure out which agent(s) to call
 3. Chain them together in the right order
@@ -85,7 +85,7 @@ Description: "Runs the email drafter agent. Takes hot leads and
              approval before sending."
 ```
 
-The orchestrator's graph is simple — it's the same ReAct pattern you already know:
+The orchestrator's graph is simple, it's the same ReAct pattern you already know:
 
 ```
 [Orchestrator LLM] ←→ [Tool: find_leads | score_leads | draft_emails]
@@ -99,21 +99,23 @@ The LLM decides which "sub-agent tool" to call, in which order, based on Alex's 
 
 This pattern is powerful because:
 
-1. **Each agent can be tested independently** — if scoring breaks, you fix the scorer, not the whole system
-2. **Adding new capabilities is easy** — just add a new agent as a new tool
-3. **The orchestrator adapts** — ask it something new and it figures out the right combination
-4. **It scales** — 3 agents today, 10 tomorrow, same pattern
+1. **Each agent can be tested independently**, if scoring breaks, you fix the scorer, not the whole system
+2. **Adding new capabilities is easy**, just add a new agent as a new tool
+3. **The orchestrator adapts**, ask it something new and it figures out the right combination
+4. **It scales**, 3 agents today, 10 tomorrow, same pattern
 
 ---
 
 ## What Makes a Good Orchestrator?
 
 A good orchestrator needs:
-- **Clear tool descriptions** — so it knows what each sub-agent can do
-- **Access to shared State** — so it can pass results from one agent to the next
-- **A good system prompt** — that defines its role and decision-making rules
-- **Guardrails** — so it doesn't call agents unnecessarily or in wrong combinations
+- **Clear tool descriptions** : so it knows what each sub-agent can do
+- **Access to shared State** : so it can pass results from one agent to the next
+- **A good system prompt** : that defines its role and decision-making rules
+- **Guardrails** : so it doesn't call agents unnecessarily or in wrong combinations
 
 ---
 
-**Now it's your turn** → Exercise 05: Build the Orchestrator
+**Now it's your turn** → **[Exercise 05: Build the Orchestrator](../01-Exercises/05-The-Orchestrator.md)**
+
+

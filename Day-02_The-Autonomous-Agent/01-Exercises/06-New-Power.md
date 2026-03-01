@@ -1,9 +1,9 @@
-# Exercise 06 — New Power: The Calendar Agent 📅
+# Exercise 06 : New Power: The Calendar Agent
 
 > **Duration**: 2h  
 > **Difficulty**: ⭐⭐⭐ (but you have the skills now!)  
 > **What you'll build**: A new agent from scratch, plugged into your orchestrator.  
-> **Mode**: 🤖 Full Cursor — you've earned it.
+> **Mode**:  Full Cursor, you've earned it.
 
 ---
 
@@ -11,7 +11,7 @@
 
 Alex: *"The follow-up emails are great, but I keep proposing meetings without checking my calendar. Last week I double-booked myself twice. Can my assistant check my availability before suggesting times?"*
 
-**Your mission**: Build a calendar agent and plug it into the orchestrator. No hand-holding this time — you know the patterns. Apply everything you've learned.
+**Your mission**: Build a calendar agent and plug it into the orchestrator. No hand-holding this time, you know the patterns. Apply everything you've learned.
 
 ---
 
@@ -36,12 +36,12 @@ Use [Cal.com's API](https://cal.com/docs/api) (free tier available) or Google Ca
 **Tool 1: `check_availability`**
 - Input: A date range (start, end)
 - Output: List of available time slots
-- Permission: 🟢 Read — auto-approve
+- Permission:  Read, auto-approve
 
 **Tool 2: `propose_meeting`**  
 - Input: Lead email, proposed time, meeting title
 - Output: Meeting link/confirmation
-- Permission: 🔴 Write (external) — requires Alex's approval
+- Permission:  Write (external), requires Alex's approval
 
 ### Option B: Mock Calendar (Simpler)
 
@@ -122,13 +122,13 @@ Expected: find → score → check calendar → draft emails with proposed times
 
 Answer these questions in a comment at the top of your code:
 
-1. How many lines of your orchestrator code did you change to add the calendar feature? (It should be very few — mostly tool imports and prompt updates.)
+1. How many lines of your orchestrator code did you change to add the calendar feature? (It should be very few, mostly tool imports and prompt updates.)
 2. What if Alex wanted to add a CRM note-taking agent next? How long would it take you?
 3. What's the maximum number of agents you could reasonably plug into this orchestrator before it becomes hard to manage?
 
 ---
 
-## ✅ Success Criteria
+##  Success Criteria
 
 - [ ] Calendar tool works independently (can check availability)
 - [ ] Orchestrator correctly uses the calendar tool when relevant
@@ -138,7 +138,7 @@ Answer these questions in a comment at the top of your code:
 
 ---
 
-## 🏆 Bonus Challenge
+##  Bonus Challenge
 
 If you finish early, add a **5th tool**: a meeting notes summarizer.
 
@@ -151,4 +151,7 @@ This is a real-world workflow that shows how agents become genuinely useful.
 
 ---
 
-**Next up**: Let's deploy this to production → Exercise 07
+---
+
+**Next up**: Let's deploy this to production  
+Continue with the next lecture:  [Lecture 07 Going-Live](../00-Lectures/07-Deployment.md)

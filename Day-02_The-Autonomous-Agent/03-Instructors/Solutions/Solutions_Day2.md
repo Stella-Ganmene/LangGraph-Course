@@ -1,10 +1,10 @@
-# Solutions — Day 2
+# Solutions  Day 2
 
 > **For instructors only.**
 
 ---
 
-## Exercise 05: The Orchestrator — Solution Architecture
+## Exercise 05: The Orchestrator : Solution Architecture
 
 ### Wrapping Agents as Tools
 
@@ -106,7 +106,7 @@ app = graph.compile(checkpointer=checkpointer, recursion_limit=30)
 
 ---
 
-## Exercise 06: Calendar Agent — Solution Architecture
+## Exercise 06: Calendar Agent : Solution Architecture
 
 ### Calendar Tools
 
@@ -162,11 +162,11 @@ orchestrator_tools = [
 # RULE: Always check availability before proposing meetings.
 ```
 
-**Key point**: The orchestrator code changes are minimal — just tool imports and prompt updates.
+**Key point**: The orchestrator code changes are minimal, just tool imports and prompt updates.
 
 ---
 
-## Exercise 07: Deployment — Solution Architecture
+## Exercise 07: Deployment, Solution Architecture
 
 ### FastAPI Backend
 

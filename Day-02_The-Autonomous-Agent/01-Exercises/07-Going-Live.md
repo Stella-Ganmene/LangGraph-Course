@@ -1,4 +1,4 @@
-# Exercise 07 — Going Live 🚀
+# Exercise 07 : Going Live 
 
 > **Duration**: 2h  
 > **Difficulty**: ⭐⭐⭐  
@@ -14,7 +14,7 @@ Alex: *"This is amazing. But I'm not going to open a terminal every time I want 
 
 ---
 
-## Part 1: Create the FastAPI Backend (30 min) — 🤖 Cursor ON
+## Part 1: Create the FastAPI Backend (30 min) : Cursor ON
 
 Create a new file: `api.py`
 
@@ -75,7 +75,7 @@ Then test with curl or your browser at `http://localhost:8000/docs` (FastAPI aut
 
 ---
 
-## Part 2: Connect the Frontend (45 min) — 🤖 Cursor ON
+## Part 2: Connect the Frontend (45 min) : Cursor ON
 
 In your **Lovable** project, create a simple chat interface that talks to your agent API.
 
@@ -165,7 +165,7 @@ It's showtime! Open your Lovable frontend and run the **full pipeline** from the
 
 ---
 
-## ✅ Success Criteria
+##  Success Criteria
 
 - [ ] FastAPI server runs and responds to requests
 - [ ] Your Lovable frontend can send messages and display responses
@@ -176,7 +176,7 @@ It's showtime! Open your Lovable frontend and run the **full pipeline** from the
 
 ---
 
-## 🧠 Final Reflection
+##  Final Reflection
 
 Take 5 minutes. Write down:
 
@@ -192,7 +192,7 @@ Take 5 minutes. Write down:
 You've built the foundation. Here's where you can go from here:
 
 - **LangGraph Cloud**: Deploy your agent on LangGraph's managed platform (no server management)
-- **LangSmith**: Professional observability — trace every agent run, debug in a visual UI
+- **LangSmith**: Professional observability, trace every agent run, debug in a visual UI
 - **More tools**: Slack integration, Google Sheets, CRM APIs, document generation
 - **More agents**: A customer support agent, a content creation agent, a data analysis agent
 - **Multi-user**: Add user authentication so multiple people can have their own agent sessions
@@ -201,4 +201,4 @@ The pattern is always the same: **define a graph, add tools, compose agents**. Y
 
 ---
 
-🎉 **Congratulations! You've completed the module!**
+ **Congratulations! You've completed the module!**

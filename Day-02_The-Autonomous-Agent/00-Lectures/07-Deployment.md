@@ -1,4 +1,4 @@
-# Lecture 07 — Going Live: From Local Agent to Production Endpoint
+# Lecture 07 : Going Live: From Local Agent to Production Endpoint
 
 > **Duration**: 15 min lecture (delivered before Exercise 07)  
 > **Objective**: Understand how to expose your agent as an API that your frontend can call.
@@ -9,7 +9,7 @@
 
 Right now, your agent runs in a terminal. You type a message, it responds. That's great for development, but Alex's clients can't open a terminal.
 
-We need to turn your agent into an **API endpoint** — a URL that your Lovable frontend can call.
+We need to turn your agent into an **API endpoint**, a URL that your Lovable frontend can call.
 
 ```
 Lovable Frontend                     Your Agent Backend
@@ -33,7 +33,7 @@ The concept:
 3. Your function calls the LangGraph agent
 4. The result is sent back as JSON
 
-That's it. Your agent logic doesn't change — you just wrap it in a web server.
+That's it. Your agent logic doesn't change, you just wrap it in a web server.
 
 ---
 
@@ -114,4 +114,8 @@ You built every piece of this over 2 days. Let's connect it all.
 
 ---
 
-**Now it's your turn** → Exercise 07: Going Live
+
+## Your turn
+
+Apply what you learned here:
+[Exercise 07 Going Live](../01-Exercises/07-Going-Live.md)

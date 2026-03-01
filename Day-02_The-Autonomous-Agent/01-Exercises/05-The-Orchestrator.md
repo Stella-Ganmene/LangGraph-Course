@@ -1,4 +1,4 @@
-# Exercise 05 — The Orchestrator 🎯
+# Exercise 05 : The Orchestrator 
 
 > **Duration**: 2h  
 > **Difficulty**: ⭐⭐⭐⭐  
@@ -36,7 +36,7 @@ Take your 3 agents from Day 1 and turn them into callable tools.
 - **Output**: Draft emails ready for review
 - **Description**: "Generates personalized follow-up emails for specified leads. Emails require Alex's approval before sending. Use this when Alex wants to reach out to leads."
 
-> 💡 **Key insight**: These tools don't call the LLM directly — they run an entire LangGraph agent internally. The orchestrator doesn't know or care about the internal complexity. It just calls a tool and gets a result. This is **abstraction** at work.
+>  **Key insight**: These tools don't call the LLM directly, they run an entire LangGraph agent internally. The orchestrator doesn't know or care about the internal complexity. It just calls a tool and gets a result. This is **abstraction** at work.
 
 ---
 
@@ -44,7 +44,7 @@ Take your 3 agents from Day 1 and turn them into callable tools.
 
 Create a new file: `orchestrator.py`
 
-Your orchestrator is structurally simple — it's the same ReAct pattern from Exercise 01, but with more powerful tools:
+Your orchestrator is structurally simple, it's the same ReAct pattern from Exercise 01, but with more powerful tools:
 
 1. **State**: `MessagesState` (same as before)
 
@@ -67,10 +67,10 @@ When Alex gives you a task:
 IMPORTANT: 
 - Always find leads before scoring them (you can't score what you haven't found)
 - Always score before emailing (only email hot leads)
-- Never skip steps — if Alex says "email my stale leads", you need to find → score → draft
+- Never skip steps, if Alex says "email my stale leads", you need to find → score → draft
 ```
 
-3. **Graph**: Same ReAct structure — LLM node ↔ Tool node, with conditional edges
+3. **Graph**: Same ReAct structure, LLM node ↔ Tool node, with conditional edges
 
 4. **Compile** with a recursion limit and a checkpointer (for the email approval interrupt)
 
@@ -109,35 +109,35 @@ ones are hot, and draft follow-up emails for them"
 
 ## Part 4: Add a Summary Layer (20 min)
 
-After the orchestrator completes its work, it should provide a **unified summary** — not just raw tool outputs.
+After the orchestrator completes its work, it should provide a **unified summary**, not just raw tool outputs.
 
 Enhance the system prompt so the final response looks like:
 
 ```
-📋 Weekly Lead Report for Alex
+ Weekly Lead Report for Alex
 
-🔍 Stale Leads Found: 5
-   - Sarah Chen (TechCorp) — 5 days, no contact
-   - Marc Dubois (DataFlow) — 4 days, no contact
-   - Lisa Wang (StartupXYZ) — 3 days, no contact
+ Stale Leads Found: 5
+   - Sarah Chen (TechCorp), 5 days, no contact
+   - Marc Dubois (DataFlow), 4 days, no contact
+   - Lisa Wang (StartupXYZ), 3 days, no contact
    ... 
 
-📊 Scoring Results:
-   🔥 Hot (3): Sarah Chen (9), Marc Dubois (8), Lisa Wang (7)
-   🟡 Warm (1): Jake Smith (5)
-   ❄️ Cold (1): Tom Brown (2)
+ Scoring Results:
+    Hot (3): Sarah Chen (9), Marc Dubois (8), Lisa Wang (7)
+    Warm (1): Jake Smith (5)
+    Cold (1): Tom Brown (2)
 
-✉️ Email Drafts Ready (3):
+ Email Drafts Ready (3):
    1. Sarah Chen — "Following up on our TechCorp discussion..."
    2. Marc Dubois — "Quick update on the DataFlow integration..."
    3. Lisa Wang — "Excited to continue our StartupXYZ conversation..."
 
-⏳ Awaiting your approval to send.
+ Awaiting your approval to send.
 ```
 
 ---
 
-## ✅ Success Criteria
+## Success Criteria
 
 - [ ] The orchestrator correctly chains agents in the right order
 - [ ] Results from one agent flow into the next (lead IDs pass from finder to scorer)
@@ -147,12 +147,14 @@ Enhance the system prompt so the final response looks like:
 
 ---
 
-## 🧠 Reflection Questions
+##  Reflection Questions
 
 1. The orchestrator is itself an agent using the ReAct pattern. It's the **same architecture** as Exercise 01, just with more powerful tools. Does this pattern feel natural now?
-2. What would happen if you gave the orchestrator a tool it shouldn't have — like `delete_all_leads`? How would you prevent misuse?
+2. What would happen if you gave the orchestrator a tool it shouldn't have, like `delete_all_leads`? How would you prevent misuse?
 3. How many LLM calls happen in Test 3? (Count: orchestrator reasoning + each sub-agent's reasoning). Why does this matter for cost?
 
 ---
+### 📘 Course 06 — Adding a brand new capability
 
-**Next up**: Adding a brand new capability → Exercise 06
+Before starting this exercise, review the course material:
+[Lecture 06](../00-Lectures/06-Extensibility-And-Permissions.md)
