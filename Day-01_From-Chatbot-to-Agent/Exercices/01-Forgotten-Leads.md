@@ -141,3 +141,20 @@ Before moving on, answer these for yourself:
 3. Look at the messages in your State after the agent runs. Can you see the **ReAct loop** (Reason → Act → Observe → Reason)?
 
 ---
+
+---
+
+## Ready to go further?
+
+In Exercise 01, you built your first agent that can find Alex’s forgotten leads.  
+You now have a working ReAct loop with a real database tool behind it.
+
+Before we make the agent smarter, we need to understand **how it keeps track of information** and **how it decides what to do next**.
+
+That’s exactly what you’ll learn in the next lecture.
+
+<div align="center">
+
+**[➤ Lecture 03: State And Conditional Logic](../Lectures/03-State-And-Conditional-Logic.md)**
+
+</div>
