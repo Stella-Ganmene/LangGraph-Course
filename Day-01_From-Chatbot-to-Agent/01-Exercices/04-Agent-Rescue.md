@@ -89,7 +89,7 @@ Alex left his agents running overnight. He wakes up to chaos:
 
 ---
 
-## 🔓 Case 4: The Infinite Thinker
+##  Case 4: The Infinite Thinker
 
 **Symptom**: An agent started at 3 AM and is still running. CPU at 100%.
 
@@ -121,10 +121,10 @@ There is no **maximum iteration count** and no **stop condition** besides the AI
 ##  Scoring
 
 For each case, you earn points for:
-- ✅ **Correct diagnosis** (identify the failure mode): 1 point
-- ✅ **Root cause** (explain WHY it happened): 1 point
-- ✅ **Fix implemented** (code actually works): 1 point
-- ✅ **Prevention** (the fix prevents future occurrences, not just this one): 1 point
+-  **Correct diagnosis** (identify the failure mode): 1 point
+-  **Root cause** (explain WHY it happened): 1 point
+-  **Fix implemented** (code actually works): 1 point
+-  **Prevention** (the fix prevents future occurrences, not just this one): 1 point
 
 **Target**: 12/16 or higher = you're ready for Day 2!
 
@@ -146,9 +146,9 @@ After completing all 4 cases, write down:
 ## 🎉 Day 1 Complete!
 
 Look at what you've accomplished today:
-- ✅ Built an agent that queries a database (Exercise 01)
-- ✅ Built an agent that reasons and writes back to a database (Exercise 02)
-- ✅ Built an agent with human oversight and an external API (Exercise 03)
-- ✅ Debugged 4 real-world agent failures (Exercise 04)
+-  Built an agent that queries a database (Exercise 01)
+-  Built an agent that reasons and writes back to a database (Exercise 02)
+-  Built an agent with human oversight and an external API (Exercise 03)
+-  Debugged 4 real-world agent failures (Exercise 04)
 
 **Tomorrow**: What if all of these agents worked together, orchestrated by a single super-agent?
