@@ -154,6 +154,6 @@ Enhance the system prompt so the final response looks like:
 3. How many LLM calls happen in Test 3? (Count: orchestrator reasoning + each sub-agent's reasoning). Why does this matter for cost?
 
 ---
-### 📘 Course 06 — Adding a brand new capability
+### Course 06 — Adding a brand new capability
 
 Before starting this exercise, review the course material:  **[➤ Lecture 06: ](../00-Lectures/06-Extensibility-And-Permissions.md)**

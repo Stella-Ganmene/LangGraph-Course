@@ -133,4 +133,4 @@ A chain always does the same thing. A graph lets the AI **adapt** based on what 
 
 ---
 
-**Now it's your turn** → Exercise 01: **[Exercise 01: The Forgotten Leads](../Exercices/01-Forgotten-Leads.md)**
+**Now it's your turn** → Exercise 01: **[Exercise 01: The Forgotten Leads](../01-Exercices/01-Forgotten-Leads.md)**

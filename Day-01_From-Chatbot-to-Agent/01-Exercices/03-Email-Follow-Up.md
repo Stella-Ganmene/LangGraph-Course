@@ -177,6 +177,6 @@ Your agent now generates personalized emails
 
 **Next challenge**: Agents break in production. Learn to debug, monitor, and rescue them...
 
-**[➤ Lecture 04: Debugging Agents](../Lectures/04-Debugging-Agents.md)**
+**[➤ Lecture 04: Debugging Agents](../00-Lectures/04-Debugging-Agents.md)**
 
 </div>

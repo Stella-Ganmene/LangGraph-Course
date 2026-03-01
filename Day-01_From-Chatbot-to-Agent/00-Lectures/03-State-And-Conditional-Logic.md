@@ -101,4 +101,4 @@ The lesson: **never blindly trust agent outputs on important decisions**. Always
 ---
 
 **Next up**: Alex has too many leads. Let's help him prioritize → 
-**[Exercise 02: Lead-Scoring](../Exercices/02-Lead-Scoring.md)**
+**[Exercise 02: Lead-Scoring](../01-Exercices/02-Lead-Scoring.md)**
