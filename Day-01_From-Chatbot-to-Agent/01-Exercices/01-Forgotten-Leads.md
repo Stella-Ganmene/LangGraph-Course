@@ -155,6 +155,6 @@ That’s exactly what you’ll learn in the next lecture.
 
 <div align="center">
 
-**[➤ Lecture 03: State And Conditional Logic](../Lectures/03-State-And-Conditional-Logic.md)**
+**[➤ Lecture 03: State And Conditional Logic](../00-Lectures/03-State-And-Conditional-Logic.md)**
 
 </div>
