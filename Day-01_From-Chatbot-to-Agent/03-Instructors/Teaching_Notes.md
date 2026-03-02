@@ -27,19 +27,37 @@
 
 ---
 
-## Opening Demo (Critical : Sets the Tone)
+## Opening Scenario (Critical : Sets the Tone)
 
-**Prepare beforehand**: Have a fully working agent running locally that does the complete CRM flow (fetch leads → score → draft email → show for approval → send).
+## Objective
+Help learners understand how an AI assistant performs multi-step reasoning and uses external tools.
 
-**How to run it**:
-1. Open a terminal, run the agent
-2. Type: "Find my stale leads, score them, and draft follow-up emails for the hot ones"
-3. Let students watch the agent reason, call tools, and produce results
-4. When it pauses for approval, show the drafted emails and approve one
+## Facilitation
 
-**After the demo, ask**: "What just happened? How many steps did the AI take? Did I tell it which steps to take?"
+Present the user request:
 
-This creates the "aha" moment that carries the rest of the day.
+“Find my leads that haven't been contacted in 3 days and draft follow-up emails for each.”
+
+Explain what happens inside the AI, step by step:
+
+- It determines what information it needs  
+- It queries the CRM database  
+- It observes the results  
+- It decides what to do next  
+- It generates personalized emails  
+
+After each step, ask:  
+“Why was this step necessary?”
+
+## Discussion Question
+
+Could ChatGPT do this on its own? Why or why not?  
+Let students justify their reasoning.
+
+## Key Takeaway
+
+The system is not only generating text.  
+It is reasoning, using tools, interpreting results, and deciding next actions.
 
 ---
 

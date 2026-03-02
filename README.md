@@ -47,7 +47,7 @@ This prevents the "magic problem", students can always explain *why* their code 
 
 | Challenge | Solution |
 |---|---|
-| **Conceptual leap** (chatbot → agent) | Start with a live demo of a finished agent, then deconstruct it. Use the n8n → LangGraph analogy. |
+| **Conceptual leap** (chatbot → agent) | Start with a scenario of a finished agent, then deconstruct it. Use the n8n → LangGraph analogy. |
 | **Debugging complexity** | Dedicated "escape game" exercise (04) with 4 pre-broken agents. Catalog of 5 failure modes taught explicitly. |
 | **The "magic" problem** | Cursor OFF for first exposure to each concept. Manual-first, accelerate-second. |
 | **Safety & ethics** | Human-in-the-loop introduced naturally via "do we want AI sending emails unsupervised?" Permission matrix (read/analyze/write/delete). |
