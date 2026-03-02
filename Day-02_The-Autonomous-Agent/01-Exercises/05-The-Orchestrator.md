@@ -128,9 +128,9 @@ Enhance the system prompt so the final response looks like:
     Cold (1): Tom Brown (2)
 
  Email Drafts Ready (3):
-   1. Sarah Chen — "Following up on our TechCorp discussion..."
-   2. Marc Dubois — "Quick update on the DataFlow integration..."
-   3. Lisa Wang — "Excited to continue our StartupXYZ conversation..."
+   1. Sarah Chen : "Following up on our TechCorp discussion..."
+   2. Marc Dubois : "Quick update on the DataFlow integration..."
+   3. Lisa Wang : "Excited to continue our StartupXYZ conversation..."
 
  Awaiting your approval to send.
 ```
@@ -154,6 +154,6 @@ Enhance the system prompt so the final response looks like:
 3. How many LLM calls happen in Test 3? (Count: orchestrator reasoning + each sub-agent's reasoning). Why does this matter for cost?
 
 ---
-### Course 06 — Adding a brand new capability
+### Course 06 : Adding a brand new capability
 
 Before starting this exercise, review the course material:  **[➤ Lecture 06: ](../00-Lectures/06-Extensibility-And-Permissions.md)**
